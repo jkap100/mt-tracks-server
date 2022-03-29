@@ -7,11 +7,15 @@ User.create(first_name: "Pow", last_name: "Der", email: "powder@mail.com")
 
 puts "🌱 Seeding mountains"
 
-m1 = Mountain.create(name: "Mt Hood Meadows", location: "Oregon", country: "USA", vert: 2777, num_runs: 87, image: "https://images.unsplash.com/photo-1580738411874-22821db9a940?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80")
-m2 = Mountain.create(name: "Kicking Horse", location: "Golden, BC", country: "Canada", vert: 4133, num_runs: 128, image: "https://images.unsplash.com/photo-1468682958800-5a3a4ede03a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2156&q=80")
-m3 = Mountain.create(name: "Revelstoke", location: "Revelstoke, BC", country: "Canada", vert: 5260, num_runs: 75, image: "https://images.unsplash.com/photo-1606589618654-fbdf4ef8c32a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80")
-m4 = Mountain.create(name: "Crested Butte", location: "Colorado", country: "USA", vert: 3055, num_runs: 121, image: "https://images.unsplash.com/photo-1630507120735-b2f57ea5a134?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80")
-m5 = Mountain.create(name: "Alta", location: "Utah", country: "USA", vert: 2538, num_runs: 116, image: "https://images.unsplash.com/photo-1529255847063-71d6c5b356c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80")
+m1 = Mountain.create(name: "Mt Hood Meadows", location: "Oregon", country: "USA", vert: 2777, num_runs: 87, image: "https://images.unsplash.com/photo-1580738411874-22821db9a940?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80", map: "https://www.skihood.com/-/media/Skihood/Misc-Items/MHM-Main-Map2021_1920x1493_v2.jpg?la=en&hash=5E9535E0B5E727CE7037D6CA0987E6EBE0908948")
+
+m2 = Mountain.create(name: "Kicking Horse", location: "Golden, BC", country: "Canada", vert: 4133, num_runs: 128, image: "https://images.unsplash.com/photo-1468682958800-5a3a4ede03a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2156&q=80", map: "https://www.skitds.com/images/destoverview/pgCAKH/tmCAKH-large.jpg")
+
+m3 = Mountain.create(name: "Revelstoke", location: "Revelstoke, BC", country: "Canada", vert: 5260, num_runs: 75, image: "https://images.unsplash.com/photo-1606589618654-fbdf4ef8c32a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80", map: "https://www.revelstokemountainresort.com/uploads/entryuploads/opening-day-map-2020-large.jpg")
+
+m4 = Mountain.create(name: "Crested Butte", location: "Colorado", country: "USA", vert: 3055, num_runs: 121, image: "https://images.unsplash.com/photo-1630507120735-b2f57ea5a134?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80", map: "https://s3.onthesnow.com/images/trailmaps/colorado/crested-butte-mountain/20151015203634/xlarge.jpg")
+
+m5 = Mountain.create(name: "Park City", location: "Utah", country: "USA", vert: 3200, num_runs: 324, image: "https://images.unsplash.com/photo-1613002999602-9e59d2c3cbfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80", map: "https://cdn.ski/4WitRozEG0phUysB.jpeg")
 
 puts "🌱 Seeding runs"
 

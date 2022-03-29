@@ -65,4 +65,16 @@ class ApplicationController < Sinatra::Base
     userMt.mountain.to_json
   end
 
+    # get all of a users runs
+    get '/users/runs/:id' do
+      # binding.pry
+      userRuns = User.find(params[:id]).runs
+      userRuns.to_json()
+    end
+
+    #post to use_mts
+  post '/user_runs' do
+    userRun = UserRun.create(user_id: params[:user_id], run_id: params[:run_id])
+    userRun.run.to_json
+  end
 end

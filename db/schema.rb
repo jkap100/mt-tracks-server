@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2022_03_25_192711) do
     t.integer "vert"
     t.integer "num_runs"
     t.string "image"
+    t.string "map"
   end
 
   create_table "runs", force: :cascade do |t|
