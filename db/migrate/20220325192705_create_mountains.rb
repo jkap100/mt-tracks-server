@@ -6,6 +6,7 @@ class CreateMountains < ActiveRecord::Migration[6.1]
       t.string :country
       t.integer :vert
       t.integer :num_runs
+      t.string :image
       # t.references :run
     end
   end

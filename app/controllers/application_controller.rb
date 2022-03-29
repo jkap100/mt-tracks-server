@@ -15,6 +15,7 @@ class ApplicationController < Sinatra::Base
   #create a user
   post '/users' do
     user = User.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email])
+    user.to_json
   end
 
   #edit user email
@@ -27,7 +28,7 @@ class ApplicationController < Sinatra::Base
   #get all mountains
   get '/mountains' do
     mts = Mountain.all
-    mts.to_json
+    mts.to_json 
   end
 
   #create a mountain
@@ -47,6 +48,21 @@ class ApplicationController < Sinatra::Base
   get '/runs' do
     runs = Run.all
     runs.to_json
+  end
+
+  # get all of a users mountains
+  get '/users/mountains/:id' do
+    # binding.pry
+    userMts = User.find(params[:id]).mountains
+    userMts.to_json(
+      include: :runs
+    )
+  end
+
+  #post to use_mts
+  post '/user_mountains' do
+    userMt = UserMt.create(user_id: params[:user_id], mountain_id: params[:mountain_id])
+    userMt.mountain.to_json
   end
 
 end
