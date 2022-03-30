@@ -17,6 +17,8 @@ m4 = Mountain.create(name: "Crested Butte", location: "Colorado", country: "USA"
 
 m5 = Mountain.create(name: "Park City", location: "Utah", country: "USA", vert: 3200, num_runs: 324, image: "https://images.unsplash.com/photo-1613002999602-9e59d2c3cbfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2075&q=80", map: "https://cdn.ski/4WitRozEG0phUysB.jpeg")
 
+m6 = Mountain.create(name: "Crystal", location: "Washington", country: "USA", vert: 3100, num_runs: 50, image: "https://images.unsplash.com/photo-1609130162959-8e9b35ad2f08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80", map: "https://www.crystalmountainresort.com/-/media/crystal/images/2122-images/2122-maps/2122-winter-map-full.ashx")
+
 puts "🌱 Seeding runs"
 
 Run.create(name: "Heathers Canyon", difficulty: "Extreme", mountain_id: m1.id)
@@ -48,6 +50,22 @@ Run.create(name: "Gunsight", difficulty: "Expert", mountain_id: m5.id)
 Run.create(name: "Baldy Chutes", difficulty: "Extreme", mountain_id: m5.id)
 Run.create(name: "Cabin Hill", difficulty: "Expert", mountain_id: m5.id)
 Run.create(name: "Taint", difficulty: "Moderate", mountain_id: m5.id)
+Run.create(name: "Baldy Shoulder", difficulty: "Expert", mountain_id: m5.id)
+Run.create(name: "Home Run", difficulty: "Easy", mountain_id: m5.id)
+Run.create(name: "Last Chance", difficulty: "Expert", mountain_id: m5.id)
+Run.create(name: "Strawberry", difficulty: "Moderate", mountain_id: m5.id)
+Run.create(name: "Rollercoaster", difficulty: "Moderate", mountain_id: m5.id)
+
+Run.create(name: "Little Shot", difficulty: "Moderate", mountain_id: m6.id)
+Run.create(name: "Middle Ferk's", difficulty: "Expert", mountain_id: m6.id)
+Run.create(name: "Snake Pit", difficulty: "Extreme", mountain_id: m6.id)
+Run.create(name: "Broadway", difficulty: "Easy", mountain_id: m6.id)
+Run.create(name: "The Doors", difficulty: "Extreme", mountain_id: m6.id)
+Run.create(name: "The Plunge", difficulty: "Expert", mountain_id: m6.id)
+Run.create(name: "Jacks Cut", difficulty: "Moderate", mountain_id: m6.id)
+Run.create(name: "Green Valley", difficulty: "Moderate", mountain_id: m6.id)
+Run.create(name: "Blazing Elk", difficulty: "Expert", mountain_id: m6.id)
+Run.create(name: "Neanderthal", difficulty: "Extreme", mountain_id: m6.id)
 
 puts "🌱 Seeding user_mts"
 
