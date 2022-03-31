@@ -90,4 +90,10 @@ class ApplicationController < Sinatra::Base
     # binding.pry
     userRun.to_json
   end
+
+  #view trail map
+  get '/map/:id' do
+    map = Mountain.find(params[:id]).map
+    map.to_json
+  end
 end
